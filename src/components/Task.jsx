@@ -7,16 +7,17 @@ const Task = ({ title }) => {
   const task = useStore((store) =>
     store.tasks.find((task) => task.title === title)
   );
-
+  const setDraggedTask = useStore((store) => store.setDraggedTask)
   const deleteTasks = useStore((store) => store.deleteTask);
 
   return (
-    <div className="task">
+    <div className="task" draggable  onDragStart={() => setDraggedTask(task.title)}>
       <div>{task.title}</div>
       <div className="bottomWrapper">
         <div>
           <img
-            src={trash} alt="Trash Icon"
+            src={trash}
+            alt="Trash Icon"
             onClick={() => deleteTasks(task.title)}
           />
         </div>

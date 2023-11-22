@@ -7,7 +7,7 @@
   margin: 0 0.5rem;
   border-radius: 4px;
   padding: 0.5rem;
-  border: dashed transparent 4px;
+  border: dashed transparent 2px;
 }
 
 .titleWrapper {
@@ -54,9 +54,8 @@
   align-items: center;
   border-radius: 4px;
 }
-
-/*  
+ 
   .column.drop {
     border-color: white;
   }
-   */
+  
