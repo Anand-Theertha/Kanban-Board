@@ -1,5 +1,7 @@
 # Simple Kanban Board with React and Zustand
 
+Live hosted version of the application - [Click here](https://kanban-board-using-zustand.vercel.app/)
+
 ## Overview
 
 This is a simple Kanban Board application built using React and Zustand for state management. The primary focus of this project is functionality, and the designs are intentionally kept basic.
